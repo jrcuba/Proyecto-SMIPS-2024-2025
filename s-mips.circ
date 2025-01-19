@@ -1973,16 +1973,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(960,600)" to="(980,600)"/>
     <wire from="(330,270)" to="(420,270)"/>
     <wire from="(390,260)" to="(420,260)"/>
+    <wire from="(410,820)" to="(440,820)"/>
     <wire from="(350,140)" to="(380,140)"/>
     <wire from="(1150,720)" to="(1160,720)"/>
     <wire from="(920,730)" to="(950,730)"/>
-    <wire from="(160,920)" to="(180,920)"/>
     <wire from="(160,1040)" to="(180,1040)"/>
     <wire from="(160,160)" to="(180,160)"/>
     <wire from="(160,240)" to="(180,240)"/>
     <wire from="(160,320)" to="(180,320)"/>
     <wire from="(160,400)" to="(180,400)"/>
     <wire from="(160,860)" to="(180,860)"/>
+    <wire from="(160,920)" to="(180,920)"/>
     <wire from="(840,70)" to="(840,130)"/>
     <wire from="(540,160)" to="(610,160)"/>
     <wire from="(540,200)" to="(610,200)"/>
@@ -2042,10 +2043,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(180,1010)" name="Tunnel">
       <a name="label" val="W-Id"/>
     </comp>
+    <comp lib="0" loc="(360,950)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Write Time"/>
+    </comp>
     <comp lib="0" loc="(300,580)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
       <a name="label" val="R2I"/>
+    </comp>
+    <comp lib="4" loc="(410,820)" name="Counter">
+      <a name="width" val="1"/>
+      <a name="max" val="0x1"/>
     </comp>
     <comp lib="0" loc="(160,60)" name="Pin">
       <a name="width" val="16"/>
@@ -2349,6 +2359,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="6" loc="(179,996)" name="Text">
       <a name="text" val="RAM CONTROL"/>
       <a name="font" val="SansSerif plain 20"/>
+    </comp>
+    <comp lib="0" loc="(360,920)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Read Time"/>
     </comp>
     <comp lib="0" loc="(960,600)" name="Tunnel">
       <a name="facing" val="east"/>
